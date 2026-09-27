@@ -1,0 +1,8 @@
+{
+  "name": "Remix Baghewala Digital Twin",
+  "description": "Well-to-surface operations digital twin and thermal EOR optimization platform for the Baghewala heavy oil field.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #F7F5EE;
+  --color-bg-sidebar: #EFECE3;
+  --color-bg-card: #FFFFFF;
+  --color-bg-elevated: #F8FAFC;
+  --color-border-subtle: #E2E8F0;
+  --color-text-primary: #1E293B;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748B;
+  --color-accent-orange: #F97316;
+  --color-accent-orange-hover: #EA580C;
+  --color-accent-purple: #06B6D4;
+  --color-accent-purple-soft: #67E8F9;
+  --color-status-success: #0D9488;
+  --color-status-warning: #F59E0B;
+  --color-status-danger: #EF4444;
+}
+
+body {
+  background-color: #F7F5EE;
+  color: #1E293B;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'cv02' 1, 'cv03' 1, 'cv04' 1, 'cv11' 1;
+}
+
+/* Tabular figures for telemetry readouts */
+.tabular-nums {
+  font-feature-settings: 'tnum' 1, 'zero' 1;
+}
+
+/* Remove default number input spin arrows for clean engineering inputs */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Custom engineering slider styling */
+input[type="range"] {
+  background: #E2E8F0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #F97316;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #F97316;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+/* Custom scrollbar for light industrial software */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1EFE8;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
